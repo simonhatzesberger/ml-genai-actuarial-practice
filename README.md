@@ -33,7 +33,7 @@ Every notebook can be run in **two ways**:
 ## Repository Structure
 
 ```
-ml-genai-actuarial-seminar/
+ml-genai-actuarial-practice/
 │
 ├── README.md                       ← you are here
 ├── LICENSE
@@ -42,8 +42,7 @@ ml-genai-actuarial-seminar/
 │
 └── notebooks/
     ├── 00_jupyter_intro/
-    │   ├── 00_jupyter_intro.ipynb
-    │   └── requirements.txt
+    │   └── 00_jupyter_intro.ipynb     ← no requirements.txt; only numpy/pandas/matplotlib
     │
     ├── 01_foundations_traditional_ml/
     │   ├── 01_foundations_traditional_ml.ipynb
@@ -68,16 +67,19 @@ ml-genai-actuarial-seminar/
     ├── 05_genai_basics_best_practices/
     │   ├── 05_genai_basics_best_practices.ipynb
     │   ├── requirements.txt
+    │   ├── .env.example               ← copy to `.env` and paste your API key
     │   └── data/
     │
     ├── 06_genai_advanced_concepts/
     │   ├── 06_genai_advanced_concepts.ipynb
     │   ├── requirements.txt
+    │   ├── .env.example
     │   └── data/
     │
-    └── 07_agentic_ai/
-        ├── 07_agentic_ai.ipynb
+    └── 07_agentic_ai_introduction/
+        ├── 07_agentic_ai_introduction.ipynb
         ├── requirements.txt
+        ├── .env.example
         └── data/
 ```
 
@@ -93,16 +95,14 @@ ml-genai-actuarial-seminar/
 
 | #  | Section | Notebook | Open in Colab |
 |----|---------|----------|---------------|
-| 00 | Jupyter & Colab — a 5-minute primer | [`00_jupyter_intro.ipynb`](notebooks/00_jupyter_intro/00_jupyter_intro.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/00_jupyter_intro/00_jupyter_intro.ipynb) |
-| 01 | Foundations and Traditional Machine Learning | [`01_foundations_traditional_ml.ipynb`](notebooks/01_foundations_traditional_ml/01_foundations_traditional_ml.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/01_foundations_traditional_ml/01_foundations_traditional_ml.ipynb) |
-| 02 | Modern Machine Learning Techniques | [`02_modern_ml_techniques.ipynb`](notebooks/02_modern_ml_techniques/02_modern_ml_techniques.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/02_modern_ml_techniques/02_modern_ml_techniques.ipynb) |
-| 03 | Interpretable Machine Learning | [`03_interpretable_ml.ipynb`](notebooks/03_interpretable_ml/03_interpretable_ml.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/03_interpretable_ml/03_interpretable_ml.ipynb) |
-| 04 | Special Topics in Machine Learning | [`04_special_topics_ml.ipynb`](notebooks/04_special_topics_ml/04_special_topics_ml.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/04_special_topics_ml/04_special_topics_ml.ipynb) |
-| 05 | Working with Generative AI: Basics and Best Practices | [`05_genai_basics_best_practices.ipynb`](notebooks/05_genai_basics_best_practices/05_genai_basics_best_practices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/05_genai_basics_best_practices/05_genai_basics_best_practices.ipynb) |
-| 06 | Advanced Concepts in Generative AI | [`06_genai_advanced_concepts.ipynb`](notebooks/06_genai_advanced_concepts/06_genai_advanced_concepts.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/06_genai_advanced_concepts/06_genai_advanced_concepts.ipynb) |
-| 07 | Introduction to Agentic AI: Concepts and Applications | [`07_agentic_ai.ipynb`](notebooks/07_agentic_ai/07_agentic_ai.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-github-username>/<repo-name>/blob/main/notebooks/07_agentic_ai/07_agentic_ai.ipynb) |
-
-> **Note.** Replace `<your-github-username>` and `<repo-name>` in the badge links with your actual GitHub username and repository name once the repo is created.
+| 00 | Section 00 — Jupyter & Google Colab | [`00_jupyter_intro.ipynb`](notebooks/00_jupyter_intro/00_jupyter_intro.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/00_jupyter_intro/00_jupyter_intro.ipynb) |
+| 01 | Foundations and Traditional Machine Learning | [`01_foundations_traditional_ml.ipynb`](notebooks/01_foundations_traditional_ml/01_foundations_traditional_ml.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/01_foundations_traditional_ml/01_foundations_traditional_ml.ipynb) |
+| 02 | Modern Machine Learning Techniques | [`02_modern_ml_techniques.ipynb`](notebooks/02_modern_ml_techniques/02_modern_ml_techniques.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/02_modern_ml_techniques/02_modern_ml_techniques.ipynb) |
+| 03 | Interpretable Machine Learning | [`03_interpretable_ml.ipynb`](notebooks/03_interpretable_ml/03_interpretable_ml.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/03_interpretable_ml/03_interpretable_ml.ipynb) |
+| 04 | Special Topics in Machine Learning | [`04_special_topics_ml.ipynb`](notebooks/04_special_topics_ml/04_special_topics_ml.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/04_special_topics_ml/04_special_topics_ml.ipynb) |
+| 05 | Working with Generative AI: Basics and Best Practices | [`05_genai_basics_best_practices.ipynb`](notebooks/05_genai_basics_best_practices/05_genai_basics_best_practices.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/05_genai_basics_best_practices/05_genai_basics_best_practices.ipynb) |
+| 06 | Advanced Concepts in Generative AI | [`06_genai_advanced_concepts.ipynb`](notebooks/06_genai_advanced_concepts/06_genai_advanced_concepts.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/06_genai_advanced_concepts/06_genai_advanced_concepts.ipynb) |
+| 07 | Introduction to Agentic AI: Concepts and Applications | [`07_agentic_ai_introduction.ipynb`](notebooks/07_agentic_ai_introduction/07_agentic_ai_introduction.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/ml-genai-actuarial-practice/blob/main/notebooks/07_agentic_ai_introduction/07_agentic_ai_introduction.ipynb) |
 
 ---
 
@@ -127,8 +127,8 @@ Requires **Python ≥ 3.10** and `pip`. We recommend a fresh virtual environment
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-github-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/simonhatzesberger/ml-genai-actuarial-practice.git
+cd ml-genai-actuarial-practice
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
@@ -160,11 +160,34 @@ Then open the desired notebook from the JupyterLab file browser.
 
 ---
 
+## API keys for GenAI notebooks (`.env` workflow)
+
+Sections 5–7 talk to a frontier LLM provider (OpenAI by default; the relevant notebook setup cell explains the equivalent Anthropic or open-source endpoint where available). To run them end-to-end:
+
+1. In each of `notebooks/05_genai_basics_best_practices/`, `notebooks/06_genai_advanced_concepts/`, and `notebooks/07_agentic_ai_introduction/`, copy the section's `.env.example` to `.env` in the same folder.
+2. Paste your API key into the `.env` file. `.env` is git-ignored — **never commit real keys**.
+3. The setup cell loads `.env` via `python-dotenv` and **gracefully skips cloud-bound cells when no key is set**, so the notebook still runs locally (with the cloud cells reporting `[skipped — no OPENAI_API_KEY]`).
+
+This keeps the notebooks **bring-your-own-key** and the repository safe to publish.
+
+---
+
 ## Data & Datasets
 
 - **Small datasets** (a few MB) are checked into the relevant `data/` folder.
 - **Larger or third-party datasets** are downloaded at runtime from their original source (e.g. scikit-learn, OpenML, Keras, Hugging Face Hub) — this keeps the repository small and respects the licenses of the original data providers.
 - All datasets are used for **educational purposes only**.
+
+### Datasets used in Sections 1 and 2
+
+Both notebooks load two real-world insurance datasets from each section's `data/` folder. The CSV files are checked into the repository; the Colab setup cell mirrors them via `wget`. Cite the original Kaggle sources if you reuse the data.
+
+| File | Use | Rows × Cols | Original source |
+|---|---|---|---|
+| `data/data_medical_cost.csv` | **Regression** — predict annual medical insurance charge (`charges`) from age, sex, BMI, children, smoker, region. | 1,338 × 7 | *Medical Cost Personal Datasets* by M. Choi on Kaggle — <https://www.kaggle.com/datasets/mirichoi0218/insurance/data> |
+| `data/data_car_insurance.csv` | **Classification + Unsupervised** — predict whether a policyholder files a claim (`OUTCOME`) from 17 demographic, behavioural, and vehicle attributes. Also used as the portfolio for k-means (§3 of Section 1) and agglomerative hierarchical clustering (§4 of Section 2). | 10,000 × 19 | *Car Insurance Data* on Kaggle. |
+
+Both files are licensed for educational use; do not redistribute commercially.
 
 ---
 

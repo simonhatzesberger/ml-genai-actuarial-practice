@@ -1,0 +1,16 @@
+dev_factor_1: 1.549816
+dev_factor_2: 1.241812
+dev_factor_3: 1.090872
+dev_factor_4: 1.033333
+ultimate_2020: 2604.0000
+ultimate_2021: 2928.4667
+ultimate_2022: 3058.1871
+ultimate_2023: 3211.1715
+ultimate_2024: 3384.3469
+reserve_2020: 0.0000
+reserve_2021: 94.4667
+reserve_2022: 345.1871
+reserve_2023: 917.1715
+reserve_2024: 1824.3469
+ultimate_total: 15186.1722
+reserve_total: 3181.1722

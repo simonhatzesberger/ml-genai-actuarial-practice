@@ -1,0 +1,23 @@
+# Section 05 — Working with Generative AI: Basics and Best Practices
+
+# Core scientific stack
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+jupyter>=1.0
+
+# OpenAI Python SDK (Responses API).
+openai>=1.50
+
+# Hugging Face transformers + PyTorch for the local GPT-2 mechanism demo.
+# CPU build of torch is sufficient; ~500 MB model download on first run.
+transformers>=4.40
+torch>=2.0
+
+# Local API-key handling via .env (introduced for the GenAI sections).
+python-dotenv>=1.0
+
+# Pillow for the tiny multimodal-input demo.
+Pillow>=10.0

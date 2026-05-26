@@ -1,0 +1,19 @@
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+jupyter>=1.0
+
+# Imbalanced classification
+imbalanced-learn>=0.12
+
+# CNNs + Grad-CAM (CPU build is fine)
+torch>=2.0
+torchvision>=0.15
+Pillow>=10.0
+
+# Fairness
+fairlearn>=0.10
+folktables>=0.0.12

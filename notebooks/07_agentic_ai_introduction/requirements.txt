@@ -1,0 +1,30 @@
+# Section 07 — Introduction to Agentic AI: Concepts and Applications
+
+# Core scientific stack
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+jupyter>=1.0
+
+# OpenAI Python SDK (Responses API, also used by LangChain's openai integration).
+openai>=1.50
+
+# Pydantic for Structured Outputs schemas (used by agent tools).
+pydantic>=2.0
+
+# LangChain + LangGraph for agent orchestration.
+langchain>=0.3
+langchain-core>=0.3
+langchain-openai>=0.2
+langgraph>=0.2
+langgraph-supervisor>=0.0.6
+
+# Local API-key handling.
+python-dotenv>=1.0
+
+# Token counting for the budget tracker.
+tiktoken>=0.7
+
+# tqdm for friendly progress bars in long loops.
+tqdm>=4.66

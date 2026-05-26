@@ -1,0 +1,30 @@
+# Section 06 — Advanced Concepts in Generative AI
+
+# Core scientific stack
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+jupyter>=1.0
+
+# OpenAI Python SDK (Responses API).
+openai>=1.50
+
+# Pydantic for Structured Outputs schemas.
+pydantic>=2.0
+
+# PDF parsing for the RAG demo on annual reports.
+pymupdf>=1.24
+
+# Local API-key handling.
+python-dotenv>=1.0
+
+# Pillow for any image handling.
+Pillow>=10.0
+
+# requests for fetching remote PDFs.
+requests>=2.31
+
+# tqdm for friendly progress bars in long loops.
+tqdm>=4.66
