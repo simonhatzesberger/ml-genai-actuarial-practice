@@ -8,6 +8,7 @@ jupyter>=1.0
 
 # Imbalanced classification
 imbalanced-learn>=0.12
+catboost>=1.2          # gradient boosting used in the Exercise 1 model bake-off
 
 # CNNs + Grad-CAM (CPU build is fine)
 torch>=2.0

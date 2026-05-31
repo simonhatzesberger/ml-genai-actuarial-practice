@@ -1,0 +1,9 @@
+# Section 00 — Jupyter & Google Colab (a 5-minute primer)
+# Install:  pip install -r requirements.txt
+
+# Core scientific stack used by the demos in this primer.
+# Lower bounds (not exact pins) so a fresh Colab runtime does not have to
+# downgrade its pre-installed packages just to run the intro notebook.
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8

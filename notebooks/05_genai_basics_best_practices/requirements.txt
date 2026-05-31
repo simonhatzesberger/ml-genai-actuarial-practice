@@ -11,6 +11,9 @@ jupyter>=1.0
 # OpenAI Python SDK (Responses API).
 openai>=1.50
 
+# tiktoken: OpenAI's tokenizer, for exact token counts in §2.1 and the cost estimator (§8).
+tiktoken>=0.7
+
 # Hugging Face transformers + PyTorch for the local GPT-2 mechanism demo.
 # CPU build of torch is sufficient; ~500 MB model download on first run.
 transformers>=4.40

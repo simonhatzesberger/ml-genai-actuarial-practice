@@ -38,11 +38,10 @@ ml-genai-actuarial-practice/
 ├── README.md                       ← you are here
 ├── LICENSE
 ├── .gitignore
-├── requirements.txt                ← aggregated dependencies for local setup
-│
 └── notebooks/
     ├── 00_jupyter_intro/
-    │   └── 00_jupyter_intro.ipynb     ← no requirements.txt; only numpy/pandas/matplotlib
+    │   ├── 00_jupyter_intro.ipynb
+    │   └── requirements.txt
     │
     ├── 01_foundations_traditional_ml/
     │   ├── 01_foundations_traditional_ml.ipynb
@@ -86,7 +85,7 @@ ml-genai-actuarial-practice/
 **Design notes**
 
 - **One folder per notebook.** Each section is fully self-contained, so participants can jump directly into any topic without dragging along the rest of the repo.
-- **Per-section `requirements.txt`.** Some sections (e.g. deep learning, GenAI) need heavy or unusual dependencies that should not be forced on lighter sections. The root-level `requirements.txt` aggregates all of them for a one-shot local install.
+- **Per-section `requirements.txt`.** Every notebook folder ships its own pinned `requirements.txt`, so you install only what the section you are running actually needs — useful because some sections (e.g. deep learning, GenAI) pull in heavy dependencies that lighter sections should not be forced to install.
 - **Per-section `data/`.** Small datasets (CSVs, JSON, a few images) live in the folder of the notebook that uses them. Larger datasets are downloaded on-the-fly from inside the notebook so the repository stays lightweight.
 
 ---
@@ -135,12 +134,7 @@ python -m venv .venv
 source .venv/bin/activate          # Linux / macOS
 # .venv\Scripts\activate           # Windows (PowerShell)
 
-# 3. Install dependencies (choose one)
-
-# 3a. Everything at once
-pip install -r requirements.txt
-
-# 3b. Just one section
+# 3. Install the dependencies for the section you want to run
 pip install -r notebooks/01_foundations_traditional_ml/requirements.txt
 
 # 4. Launch Jupyter
@@ -195,7 +189,7 @@ Both files are licensed for educational use; do not redistribute commercially.
 
 - **A package fails to install on Colab.** Re-run the install cell; if it still fails, restart the runtime (**Runtime → Restart runtime**) and try again.
 - **Out-of-memory errors.** On Colab, switch to a **High-RAM** or **GPU** runtime (**Runtime → Change runtime type**).
-- **A notebook works on Colab but not locally.** Ensure you installed the *section-specific* `requirements.txt`, not just the aggregated one — version pins may differ.
+- **A notebook works on Colab but not locally.** Ensure you installed that section's `requirements.txt` into your active environment — version pins may differ between sections.
 - **Different results on different machines.** Some methods are stochastic. Look for a `random_state` / `seed` argument in the relevant cell.
 
 ---
